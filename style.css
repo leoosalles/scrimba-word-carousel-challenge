@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --ipe-flores: #ffd000;
+    --ipe-tronco: #8b5e3c;
+    --curicaca-penas: #d6d3ce;
+    --curicaca-peito: #e6a8a1;
+    --curicaca-bico: #a63a2b;
+    --carcara-asas: #5c4033;
+    --carcara-peito: #d8c8b8;
+    --carcara-bico: #7f8c8d;
+    --cerrado-solo: #a64027;
+    --cerrado-folhagem: #8a9a5b;
+    --cerrado-troncos: #4b3621;
+    --flaboyant-flores: #d72638;
+    --flaboyant-folhas: #a7c957;
+    --ipe-flores: #ffd000;
+    --ipe-tronco: #8b5e3c;
+    --ceu-rosa-alaranjado: #f28c8c;
+    --ceu-laranja-suave: #f4a261;
+    --ceu-lilas-claro: #cbaacb;
+    --concreto-modernista: #d9d9d9;
+    --terracota: #a0522d;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after {
+    content: "Eixão do Lazer";
+    background-color: #6e6e6e;
+    color: #ffbe0b;
+    padding: .25em .5em;
+    border-radius: 5px;
+    animation: brasilia 7s steps(1, end) infinite;
+}
+
+@keyframes brasilia {
+    0% {
+        content: "Eixão do Lazer";
+    }
+    16.66% {
+        content: "Ipês";
+        background-color: var(--ipe-flores);
+        color: var(--ipe-tronco);
+    }
+    33.33% {
+        content: "Curicacas";
+        background-color: var(--curicaca-bico);
+        color: var(--curicaca-penas);
+    }
+    50% {
+        content: "Céu de Brasília";
+        background-color: var(--ceu-laranja-suave);
+        color: #f9f9f9;
+    }
+    66.66% {
+        content: "Carcarás";
+        background-color: var(--carcara-bico);
+        color: var(--carcara-peito);
+    }
+    83.33% {
+        content: "Flamboyants";
+        background-color: var(--flaboyant-flores);
+        color: var(--flaboyant-folhas);
+    }
+    100% {
+        content: "Eixão do Lazer";
+    }
+}
