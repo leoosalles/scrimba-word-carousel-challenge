@@ -1,4 +1,4 @@
-# scrimba-word-carousel-challenge
+<h1>Word Carousel 🌍✨</h1>
 A simple yet dynamic way to highlight words interactively. This project uses <strong>HTML</strong>, <strong>CSS</strong>, and <strong>keyframe animations</strong> to create a rotating word effect, inspired by the beauty and essence of Brasília.
 <h2>🔥Features</h2>
 <ul>
